@@ -6,6 +6,7 @@ module SpotifyHttpRemote
 	class Server < Sinatra::Base
 		require 'sinatra'
 
+		set port: 8080
 		set :environment, :production
 
 	  	get '/play' do
