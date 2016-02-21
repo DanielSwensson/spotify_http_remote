@@ -1,10 +1,11 @@
 require "spotify_http_remote/version"
-require "sinatra"
+require "spotify_http_remote/application/server"
 
 module SpotifyHttpRemote
-  
-  get '/' do
-  	"hello world"
-  end	
 
+	def self.start (port)
+		puts "Starting SpotifyHttpRemote server"
+		SpotifyHttpRemote::Server.run!
+	end
+  
 end

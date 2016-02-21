@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{HTTP API for controlling Spotify OSX client}
   spec.homepage      = "https://github.com/DanielSwensson/spotify_http_remote"
+  spec.licenses      = ['MIT']
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
