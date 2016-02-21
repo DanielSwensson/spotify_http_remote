@@ -1,5 +1,10 @@
 require "spotify_http_remote/version"
+require "sinatra"
 
 module SpotifyHttpRemote
-  # Your code goes here...
+  
+  get '/' do
+  	"hello world"
+  end	
+
 end
