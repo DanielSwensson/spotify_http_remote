@@ -3,7 +3,7 @@ require "spotify_http_remote/application/server"
 
 module SpotifyHttpRemote
 
-	def self.start (port)
+	def self.start
 		puts "Starting SpotifyHttpRemote server"
 		SpotifyHttpRemote::Server.run!
 	end
