@@ -1,5 +1,7 @@
 # SpotifyHttpRemote
 
+[![Build Status](https://travis-ci.org/DanielSwensson/spotify_http_remote.svg?branch=master)](https://travis-ci.org/DanielSwensson/spotify_http_remote)
+
 HTTP API for sending basic playback commands to a spotify client running on OSX.
 
 ## Installation
