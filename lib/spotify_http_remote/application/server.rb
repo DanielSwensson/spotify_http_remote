@@ -6,7 +6,6 @@ module SpotifyHttpRemote
 	class Server < Sinatra::Base
 		
 	  	get '/play' do
-	  		puts Server.development?
 	  		params.keys.each do |key|
   				params[(key.to_sym rescue key) || key] = params.delete(key)
 			end	  		
