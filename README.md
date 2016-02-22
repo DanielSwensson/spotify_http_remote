@@ -34,7 +34,5 @@ Next: `<your-domain>:8080/next` - Next track
 
 Previous: `<your-domain>:8080/previous` - Previous track
 
-## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/spotify_http_remote.
 
