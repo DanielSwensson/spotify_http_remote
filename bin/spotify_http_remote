@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require "spotify_http_remote"
-require "dante"
+require 'spotify_http_remote'
 
-SpotifyHttpRemote.start
-
+SpotifyHttpRemote.start ARGV[0]

@@ -4,13 +4,13 @@ require 'spotify_osx_controller'
 module SpotifyHttpRemote
 
 	class Server < Sinatra::Base
-		require 'sinatra'
-
-		set port: 8080
-		set :environment, :production
-
+		
 	  	get '/play' do
-	  		SpotifyOsxController.play
+	  		puts Server.development?
+	  		params.keys.each do |key|
+  				params[(key.to_sym rescue key) || key] = params.delete(key)
+			end	  		
+	  		SpotifyOsxController.play params
 	  	end
 	
 	  	get '/stop' do
