@@ -30,7 +30,7 @@ Switch to production mode and start sending commands from other devices on the n
 
     $ export RACK_ENV=production
     
-To allow devices from outside your network to send requests to the client, the router needs to be configured to forwarding traffic to the chosen port of the network to client's local IP.
+To allow devices from outside your network to send requests to the client, the router needs to be configured to forward traffic to the client's local IP.
     
 ### HTTP routes
 
