@@ -1,6 +1,6 @@
 # SpotifyHttpRemote
 
-HTTP API for OSX only that allows remote controlling Spotify by sending requests to the computer that this client is running on.
+HTTP API for sending basic playback commands to a spotify client running on OSX.
 
 ## Installation
 
@@ -22,17 +22,31 @@ Or install it yourself as:
 
 Start server:
 
-    $ spotify_http_remote
+    $ spotify_http_remote <port> - Default port is 8080
+
+In development mode 'localhost' is the default hostname.
+
+Switch to production mode and start sending commands from other devices on the network by setting `RACK_ENV` variable to 'production':
+
+    $ export RACK_ENV=production
+    
+To allow devices from outside your network to send requests to the client, the router needs to be configured to forwarding traffic to the chosen port of the network to client's local IP.
     
 ### HTTP routes
 
-Play: `<your-domain>:8080/play` - Start playback
+Start playback: `<your-domain>:<port>/play`
 
-Stop: `<your-domain>:8080/play` - Stop playback  
+Start playing The Beatles: `<your-domain>:<port>/play?artist=beatles`
 
-Next: `<your-domain>:8080/next` - Next track
+Start playing Drive My Car by The Beatles: `<your-domain>:<port>/play?artist=beatles&track=drive%20my%20car`
 
-Previous: `<your-domain>:8080/previous` - Previous track
+Start playing the album Help: `<your-domain>:<port>/play?album=Help!` 
+
+Stop playback: `<your-domain>:<port>/stop`  
+
+Next track: `<your-domain>:8080/next`
+
+Previous track: `<your-domain>:8080/previous`
 
 
 
