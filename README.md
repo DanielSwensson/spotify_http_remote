@@ -44,9 +44,9 @@ Start playing the album Help: `<your-domain>:<port>/play?album=Help!`
 
 Stop playback: `<your-domain>:<port>/stop`  
 
-Next track: `<your-domain>:8080/next`
+Next track: `<your-domain>:<port>/next`
 
-Previous track: `<your-domain>:8080/previous`
+Previous track: `<your-domain>:<port>/previous`
 
 
 
